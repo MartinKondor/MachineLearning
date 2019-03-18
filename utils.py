@@ -5,7 +5,7 @@ def accuracy(y, y_hat):
     for i in range(y_hat.shape[0]):
         if y[i] == 1 and y_hat[i] > .5:
             good += 1
-        elif y[i] == 0 and y_hat[] <= .5:
+        elif y[i] == 0 and y_hat[i] <= .5:
             good += 1 
             
     return 100*good / y_hat.shape[0]
