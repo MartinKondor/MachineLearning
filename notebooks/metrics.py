@@ -6,11 +6,10 @@ def E(model, X_train, X_test, y_train, y_test):
     xtestp = model.predict(X_test)
     
     print('RMSE on test:', mse(y_test, xtestp)**(1/2) )
-    print('RMSE on train:', mse(y_train, xtrainp)**(1/2) )
-    
     print('MSE on test:', mse(y_test, xtestp) )
-    print('MSE on train:', mse(y_train, xtrainp) )
-    
     print('MAE on test:', mae(y_test, xtestp) )
+    
+    print('RMSE on train:', mse(y_train, xtrainp)**(1/2) )
+    print('MSE on train:', mse(y_train, xtrainp) )
     print('MAE on train:', mae(y_train, xtrainp) )
 
