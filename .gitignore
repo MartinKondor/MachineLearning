@@ -1,4 +1,5 @@
-nogit_*
+.vscode
+.idea
 bin/
 
 # Byte-compiled / optimized / DLL files
